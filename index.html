@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite Missionário - IVPT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #002d5b; /* Azul IVPT */
+            --accent-color: #d4af37;  /* Dourado */
+            --text-light: #ffffff;
+            --bg-gradient: linear-gradient(135deg, #002d5b 0%, #001a35 100%);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .folder-container {
+            width: 100%;
+            max-width: 450px;
+            background: var(--bg-gradient);
+            color: var(--text-light);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px-40px rgba(0,0,0,0.3);
+            text-align: center;
+            position: relative;
+        }
+
+        .header-image {
+            width: 100%;
+            height: 250px;
+            background: url('https://images.unsplash.com/photo-1493612276216-ee3925520721?auto=format&fit=crop&q=80&w=1000') center/cover;
+            position: relative;
+        }
+
+        .header-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, var(--primary-color));
+            padding: 20px;
+        }
+
+        .content {
+            padding: 30px 25px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .cta-section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            margin-top: 20px;
+        }
+
+        .qrcode-container {
+            background: white;
+            padding: 15px;
+            display: inline-block;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .qrcode-container img {
+            width: 180px;
+            height: 180px;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s;
+            margin-top: 15px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            padding: 20px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="folder-container">
+        <div class="header-image">
+            <div class="header-overlay">
+                <img src="" alt="" style="max-width: 150px;">
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Você quer ser um missionário?</h1>
+            <p>O <span class="highlight">Instituto Vida Para Todos</span> convida você para uma jornada de propósito e fé. Leve o Evangelho do Reino a todas as nações e transforme vidas através da Palavra.</p>
+            
+            <div class="cta-section">
+                <p style="margin-bottom: 15px; font-weight: bold;">Escaneie o QR Code abaixo para conversar conosco:</p>
+                
+                <div class="qrcode-container">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/5527996987547?text=Olá,%20vi%20o%20anúncio%20“Você%20quer%20ser%20um%20missionário?”%20e%20eu%20me%20interessei." alt="QR Code WhatsApp">
+                </div>
+
+                <br>
+                
+                <a href="https://wa.me/5527996987547?text=Olá,%20vi%20o%20anúncio%20“Você%20quer%20ser%20um%20missionário?”%20e%20eu%20me%20interessei." class="whatsapp-btn">
+                    Falar pelo WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            Instituto Vida Para Todos - IVPT / Igreja que está em Serra.<br>
+            "Pregando o Evangelho do Reino em toda a terra."
+        </div>
+    </div>
+
+</body>
+</html>
